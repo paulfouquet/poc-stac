@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "poc-stac"
+version = "0.1.0"
+description = "POC STAC generation using various tools"
+authors = ["Paul Fouquet <pfouquet@linz.govt.nz>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+stactools = "^0.5.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
