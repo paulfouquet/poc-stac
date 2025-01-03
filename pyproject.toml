@@ -9,6 +9,7 @@ package-mode = false
 [tool.poetry.dependencies]
 python = "^3.12"
 stactools = "^0.5.3"
+rio-stac = "^0.10.1"
 
 
 [build-system]
