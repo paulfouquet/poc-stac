@@ -996,6 +996,26 @@ attrs = ">=22.2.0"
 rpds-py = ">=0.7.0"
 
 [[package]]
+name = "rio-stac"
+version = "0.10.1"
+description = "Create STAC Items from raster datasets."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "rio_stac-0.10.1-py3-none-any.whl", hash = "sha256:112d7a2278714c376a1b48088e8e678dc8a20e89458fc1df9d7f4cdfaa00c347"},
+    {file = "rio_stac-0.10.1.tar.gz", hash = "sha256:944285899eb10215a2c02e9cc7d1ee1afc431bbd26564e84de02710c471c1bc4"},
+]
+
+[package.dependencies]
+pystac = ">=1.0.0,<2.0.0"
+rasterio = ">=1.0,<1.4.2 || >1.4.2"
+
+[package.extras]
+dev = ["bump-my-version", "pre-commit"]
+doc = ["mkdocs", "mkdocs-jupyter", "mkdocs-material", "pdocs", "pygments"]
+test = ["pystac[validation] (>=1.0.0,<2.0.0)", "pytest", "pytest-cov", "requests"]
+
+[[package]]
 name = "rpds-py"
 version = "0.22.3"
 description = "Python bindings to Rust's persistent data structures (rpds)"
@@ -1303,4 +1323,4 @@ propcache = ">=0.2.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "5249f75f27f9bf0fb4364b1f7a63f265d36da20d17824bbf1e817821a22de798"
+content-hash = "b0cc02f433bcf80c521146115376dd30ede83d2c0c800688a79f9ae0850cb5a9"
